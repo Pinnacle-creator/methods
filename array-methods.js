@@ -15,6 +15,9 @@ console.log(cookieIngredients);
 
 const pizzas = ["Hawai", "Margherita"];
 
+const newItem = pizzas.push("Salami");
+console.log(newItem);
+console.log(pizzas);
 
 
 /* Opdracht 2: */
@@ -23,7 +26,9 @@ const pizzas = ["Hawai", "Margherita"];
 // ---- Verwachte uitkomst: 'Noten' en [ 'Eieren', 'Bloem', 'Cacao', 'Chocoladestukjes', 'Bakpoeder' ]
 
 const brownieIngredients = ["Noten", "Eieren", "Bloem", "Cacao", "Chocoladestukjes", "Bakpoeder"];
-
+const [ deleted ] = brownieIngredients.splice(0, 1, );
+console.log(deleted);
+console.log(brownieIngredients);
 
 /* Opdracht 3: */
 // Draai de volgorde van onderstaande array met namen om en log de gehele array in de terminal om te kijken is het gelukt is
@@ -31,7 +36,8 @@ const brownieIngredients = ["Noten", "Eieren", "Bloem", "Cacao", "Chocoladestukj
 
 const names = ["Henk", "Jan", "Piet"];
 
-
+names.reverse();
+console.log(names);
 
 /* Opdracht 4: */
 // Onderstaande array bevat een lijst met plaatsnamen. Voeg de naam "Amsterdam" toe tussen Utrecht en Maastricht.
@@ -40,4 +46,6 @@ const names = ["Henk", "Jan", "Piet"];
 const cities = ["Utrecht", "Maastricht", "Eindhoven"];
 
 
+cities.splice(1, 0, "Amsterdam");
+console.log(cities);
 
